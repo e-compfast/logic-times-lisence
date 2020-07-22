@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firebase Sales Widget</title>
+<link rel="stylesheet" type="text/css" href="css/sales.css"/>
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+<script type="text/javascript" src="https://e-compfast.github.io/make-404-html/js/jquery.min.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAKBTxysJQc7EDs81mff71cjPp5nkwECJE",
+    authDomain: "speaker-qur-an.firebaseapp.com",
+    databaseURL: "https://speaker-qur-an.firebaseio.com",
+    projectId: "speaker-qur-an",
+    storageBucket: "speaker-qur-an.appspot.com",
+    messagingSenderId: "153673327985",
+    appId: "1:153673327985:web:32a189cf1b633551d042d0",
+    measurementId: "G-DT6GCWRB23"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</head>
+<body>
+	<div class="headWidget">
+		<h1 align="center" class="headWidget">Firebase Widget Static</h1>
+		<fieldset>
+			<input type="text" name="name" id="userName" placeholder="Buyer Name" />
+			<input type="text" name="avatar" id="avatarUrl" placeholder="Avatar URL" />
+			<input type="text" name="screenshot" id="screenshotUrl" placeholder="Screenshot URL" />
+			<input type="text" name="product" id="productName" placeholder="Product Name" />
+			<input type="text" name="productUrl" id="productUrl" placeholder="Product URL" />
+			<input type="text" name="timeSales" id="timeSales" placeholder="Time Sales" />
+		</fieldset>
+		<button id="submitBtn">Add Sales</button>
+	</div>
+
+
+
+<div class="liveSales_widget"></div>
+<script type="text/javascript" src="js/sales.js"></script>
+<script type="text/javascript" src="js/datatrx.js"></script>
+</body>
+</html>
